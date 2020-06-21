@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<canvas id="canvasId" width="700" height="300"
+		<canvas onmousemove="sprite.setCoord()" id="canvasId" width="700" height="300"
 		style="border:2px dotted #336688;"></canvas>
 		<div id="result"></div>
 		<script src="js/animation_nps.js"></script>
@@ -10,6 +10,6 @@
 		<button onclick="sprite.moveLeft()">Left</button>
 		<button onclick="sprite.moveRigth()">Rigth</button>
 		<button onclick="sprite.moveStop()">Stop</button>
-		
+		<!-- <input onmousemove="this.value = event.clientX+':'+event.clientY"> -->
 	</body>
 </html>

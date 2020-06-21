@@ -24,9 +24,21 @@ class Sprite {
 
         this.width = options.width;
         this.height = options.height;
-
+        // addEventListener("keydown", function(event) {
+        //     if (event.keyCode == 86)
+        //         document.body.style.background = "violet";
+        // });
+        // addEventListener("keyup", function(event) {
+        //     if (event.keyCode == 86)
+        //         document.body.style.background = "";
+        // });
         this.start();
     }
+    setCoord(){
+        //alert("coordinat change");
+        console.log("coordinat change")
+    }
+
     moveUP(){
         this.move = this.height*3;
         this.state = this.STATE.UP;
@@ -137,7 +149,7 @@ var y = 100;
 let sprite = new Sprite({
   ctx: canvas.getContext('2d'),
   image: manImage,
-  width: 1145,
+  width: 1142,
   height: 160,
   numberOfFrames: 12,
   ticksPerFrame: 4,
